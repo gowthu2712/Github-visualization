@@ -5,8 +5,8 @@ Visualization for Github repositories
 GitHub, the web-based Git repository hosting service, provides versioning control and source code management. With the management of source code and storage of different versions of a file, there are voluminous data available from GitHub waiting to be explored and to get insights from. Our project aims at visualizing this rich source of data from GitHub so that useful insights can be achieved. The visualizations are adaptive based on the audience and the viewers have complete control over what they want to drill down to. This aspect of dynamic user configurable visualization helps this project stand apart from the traditional visualization approaches. In this project work, we explore visualizations to answer questions related to Github users and repositories.
 
 # Interesting Questions:
-• Provide suggestions for repositories for new Github users so that they can collaborate and contribute to the projects
-• Provide a representation to compare and contrast the contributions made by different users to a repository
+1. Provide suggestions for repositories for new Github users so that they can collaborate and contribute to the projects
+2. Provide a representation to compare and contrast the contributions made by different users to a repository
 
 # Comparison of contributions by users to a repository
 Github provides a graphical representation to present an overview of contributions/commits made to a particular repository and also a detailed graph on the changes made by each user to that repository.
