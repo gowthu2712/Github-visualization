@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>GitHub Visualization</title>
+
+	<link href="/Users/gganesan/Documents/COGS220/foundation.min.css" rel="stylesheet"  />
+	<link rel="stylesheet" href="/Users/gganesan/Documents/COGS220/style.css" />
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="/Users/gganesan/Documents/COGS220/d3.min.js" type="text/javascript"></script>
+	<script src="/Users/gganesan/Documents/COGS220/eventDrops.js" type="text/javascript"></script>
+	<script src="/Users/gganesan/Documents/COGS220/eventDrops_main.js" type="text/javascript"></script>
+	<script src="/Users/gganesan/Documents/COGS220/app2-copy.js" type="text/javascript"></script>
+
+
+	<style>
+		.bubbleChart {
+			min-width: 100px;
+			max-width: 1400px;
+			width: 700px;
+			border: "2px";
+			height: 700px;
+			margin: 2 auto;
+		}
+		.bubbleChart svg{
+			background: #FFFFFF;
+		}
+	</style>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,600,200italic,600italic&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+  <!--<link href="/Users/gganesan/Documents/COGS220/stylesheet.css" rel="stylesheet" /> -->
+  <!--<script src="http://phuonghuynh.github.io/js/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/d3/d3.min.js"></script> -->
+  <script src="http://phuonghuynh.github.io/js/bower_components/d3-transform/src/d3-transform.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/cafej/src/extarray.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/cafej/src/misc.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/cafej/src/micro-observer.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/microplugin/src/microplugin.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/bubble-chart/src/bubble-chart.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/bubble-chart/src/plugins/central-click/central-click.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/bubble-chart/src/plugins/lines/lines.js"></script>
+</head>
+
+<body>
+
+<div class="row">
+  <div class="large-centered columns center-text">
+		<br><br>
+		<h2>GITHUB REPOSITORY SUGGESTIONS</h2>
+		<br><br>
+	</div>
+</div>
+
+<div class="row">
+	<div class="small-8 large-centered columns center-text">
+		<section id="fetch">
+				<table border='0'>
+					<tr><td><label> Prog. language : &nbsp;</label><td><input type="text" class="form-control" placeholder="Enter your fav programming language" id="lang" /><td>&nbsp;&nbsp;<td><td><button id="search" type="button" class="btn btn-primary">Search</button></tr>
+					<tr><td><label> Criteria : &nbsp;</label><td><select class='form-control' id='criteria'><option>Watchers</option><option>Forks</option><option>Size</option><option>Open Issues</option></select></td></tr>
+				</table>
+		</section>
+	</div>
+</div>
+
+<div class="row">
+	<div class="small-6 large-centered columns center-text" id="username">
+	</div>
+</div>
+<br><br>
+<div class="large-5 medium-5 small-12 columns" border="1" id="repoSuggestions">
+</div>
+<br>
+<br>
+</body>
+</html>
